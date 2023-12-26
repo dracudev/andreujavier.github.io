@@ -1,0 +1,30 @@
+html {
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    color: aliceblue;
+    background-image: url("/images/fondo.jpg");
+    background-size: cover;
+  }
+
+  body {
+    width: 1200px;
+    height: 2000px;
+    margin: 0 auto;
+    background-color: #19696da2;
+    padding: 0 20px 20px 20px;
+  }
+
+  nav {    
+    background-color: rgba(75, 240, 227, 0.459);
+    color: white;
+    padding: 2px;
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
