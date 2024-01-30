@@ -7,24 +7,54 @@ html {
   }
 
   body {
-    width: 1200px;
-    height: 2000px;
-    margin: 0 auto;
+    margin: 0;
     background-color: #19696da2;
-    padding: 0 20px 20px 20px;
+    min-height: 100vh;
   }
 
-  nav {    
+  .layout {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header sobremi"
+    "contenido contenido rrss"
+    "footer footer footer";
+    padding: 4px;
+  }
+
+  .layout nav {    
+    grid-area: nav;
     background-color: rgba(75, 240, 227, 0.459);
     color: white;
     padding: 2px;
     text-align: center;
   }
 
-  header {
+  .layout header {
+    grid-area: header;
     text-align: center;
+    background-color: rgba(144, 159, 171, 0.612);
+    max-height: 200px;
   }
 
-  footer {
+  .layout .contenido {
+    grid-area: contenido;
+    background-color: rgba(127, 255, 212, 0.492);
+  }
+  
+  .layout .sobremi {
+    grid-area: sobremi;
+    background-color: rgba(0, 0, 255, 0.326);
+    max-height: 200px;
+  }
+
+  .layout .rrss {
+    grid-area: rrss;
+    background-color: rgba(255, 166, 0, 0.529);
+  }
+
+  .layout footer {
+    grid-area: footer;
     text-align: center;
+    background-color: gray;
   }
