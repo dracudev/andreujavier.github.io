@@ -1,60 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: rgb(192, 28, 50);
+}
+
 html {
-    font-size: 20px;
-    font-family: 'Jost', sans-serif;
-    color: aliceblue;
-    background-image: url("/images/fondo.jpg");
-    background-size: cover;
-  }
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 
-  body {
-    margin: 0;
-    background-color: #19696da2;
-    min-height: 100vh;
-  }
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
 
-  .layout {
-    display: grid;
-    grid-template-areas: 
-    "nav nav nav"
-    "header header sobremi"
-    "contenido contenido rrss"
-    "footer footer footer";
-    padding: 4px;
-  }
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
 
-  .layout nav {    
-    grid-area: nav;
-    background-color: rgba(75, 240, 227, 0.459);
-    color: white;
-    padding: 2px;
-    text-align: center;
-  }
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
 
-  .layout header {
-    grid-area: header;
-    text-align: center;
-    background-color: rgba(144, 159, 171, 0.612);
-    max-height: 200px;
-  }
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
 
-  .layout .contenido {
-    grid-area: contenido;
-    background-color: rgba(127, 255, 212, 0.492);
-  }
-  
-  .layout .sobremi {
-    grid-area: sobremi;
-    background-color: rgba(0, 0, 255, 0.326);
-    max-height: 200px;
-  }
-
-  .layout .rrss {
-    grid-area: rrss;
-    background-color: rgba(255, 166, 0, 0.529);
-  }
-
-  .layout footer {
-    grid-area: footer;
-    text-align: center;
-    background-color: gray;
-  }
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+1029
