@@ -152,6 +152,84 @@ section {
 
 .idioma ul li ul li a { transition: all 0.5s ease; }
 
+/* HEADER - Darkmode */
+
+.darkmode {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkmode input {
+    position: absolute;
+    opacity: 0;
+}
+
+#sun {
+    position: absolute;
+    font-size: 3em;
+    color: #363434;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+input:checked~#sun {
+    transition-delay: .8s;
+    transform: scale(1) rotate(360deg) ;
+}
+
+#moon {
+    font-size: 3em;
+    color: #363434;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transition: 1s ease;
+    transition-delay: .8s;
+}
+
+input:checked~#moon {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+.darkmode .toggle {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 8px 60px rgba(0, 0, 0, .1),
+        inset 0 8px 8px rgba(0, 0, 0, .1),
+        inset 0 -4px 4px rgba(0, 0, 0, .1);
+    z-index: -1;
+    transition: 1s;
+}
+
+.darkmode input:checked~.toggle {
+    background: #f8f8f8;
+}
+
+.darkmode .animateBg {
+    position: absolute;
+    width: 1000%;
+    height: 1000vh;
+    background: #f6f7fa;
+    color: #292626;
+    z-index: -2;
+    clip-path: circle(0.0% at 50% 50%);
+    transition: 1s ease-out;
+    color-scheme: light;
+}
+
+input:checked~.animateBg {
+    clip-path: circle(150% at 50% 50%);
+}
+
 /* HOME */
 
 .home {
@@ -602,5 +680,21 @@ span{
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #f6f7fa;
+        --second-bg-color: #aeb4be;
+        --text-color: #292626;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1f242d;
+        --second-bg-color: #323946;
+        --text-color: #fff;
     }
 }
