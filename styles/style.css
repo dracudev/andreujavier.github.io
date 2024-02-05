@@ -698,9 +698,10 @@ span{
         color: #ffffff;
     }
 
-    .projects h4, p {
+    .projects h4, .projects p {
         color: #ffffff;
     }
+
 }
 
 @media (prefers-color-scheme: dark) {
