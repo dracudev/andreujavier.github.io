@@ -685,9 +685,21 @@ span{
 
 @media (prefers-color-scheme: light) {
     :root {
-        --bg-color: #f6f7fa;
-        --second-bg-color: #aeb4be;
-        --text-color: #292626;
+        --bg-color: #ffffff;
+        --second-bg-color: #bdafc5;
+        --text-color: #1f242d;
+    }
+
+    .about p {
+        color: #ffffff;
+    }
+
+    .services p {
+        color: #ffffff;
+    }
+
+    .projects h4, p {
+        color: #ffffff;
     }
 }
 
