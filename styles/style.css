@@ -11,12 +11,35 @@
   scroll-behavior: smooth;
 }
 
-:root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: rgb(137, 83, 199);
-}
+:root,
+    :root.dark {
+        --bg-color: #1f242d;
+        --second-bg-color: #323946;
+        --text-color: #fff;
+        --main-color: rgb(137, 83, 199);
+    }
+
+    :root.light {
+        --bg-color: #ffffff;
+        --second-bg-color: #bdafc5;
+        --text-color: #1f242d;
+        
+        .about p {
+            color: #ffffff;
+        }
+    
+        .services p {
+            color: #ffffff;
+        }
+    
+        .projects h4, .projects p {
+            color: #ffffff;
+        }
+
+        .idiomas {
+            color: #ffffff;
+        }
+    }
 
 html {
     font-size: 62.5%;
@@ -176,19 +199,22 @@ section {
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
     transform: scale(0);
     transition: 1s ease;
+    padding: 0.3em;
 }
 
 input:checked~#sun {
     transition-delay: .8s;
-    transform: scale(1) rotate(360deg) ;
+    transform: scale(1) rotate(360deg);
 }
 
 #moon {
+    position: absolute;
     font-size: 3em;
-    color: #363434;
+    color: #fff;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
     transition: 1s ease;
     transition-delay: .8s;
+    padding: 0.3em;
 }
 
 input:checked~#moon {
@@ -223,7 +249,6 @@ input:checked~#moon {
     z-index: -2;
     clip-path: circle(0.0% at 50% 50%);
     transition: 1s ease-out;
-    color-scheme: light;
 }
 
 input:checked~.animateBg {
@@ -553,6 +578,10 @@ span{
     html {
         font-size: 55%;
     }
+
+    .darkmode {
+        padding: 3em;
+    }
 }
 
 @media (max-width: 991px) {
@@ -581,7 +610,7 @@ span{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 854px) {
     #menu-icon {
         display: block;
     }
@@ -664,7 +693,7 @@ span{
     }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 372px) {
     .home-img img {
         width: 90vw;
     }
@@ -680,6 +709,10 @@ span{
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+
+    .logo {
+        font-size: 2em;
     }
 }
 
@@ -699,6 +732,10 @@ span{
     }
 
     .projects h4, .projects p {
+        color: #ffffff;
+    }
+
+    .idiomas {
         color: #ffffff;
     }
 

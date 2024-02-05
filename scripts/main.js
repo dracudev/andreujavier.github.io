@@ -60,3 +60,6 @@ const typed = new Typed(".multiple-text", {
     loop: true   
 })
 
+
+//dark/light mode
+const setTheme = theme => document.documentElement.className = theme;

@@ -19,26 +19,28 @@
     <header class="header">
         <a href="#" class="logo">Javier Andreu</a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
 
-        <!-- <label class="darkmode">
+
+        <label class="darkmode">
             <input type="checkbox">
-            <i class='bx bx-moon' id="moon" ></i>
-            <i class='bx bxs-sun' id="sun"></i>
+            <i class='bx bx-moon' id="moon" onclick="setTheme('light')"></i>
+            <i class='bx bxs-sun' id="sun" onclick="setTheme('dark')"></i>
             <span class="toggle"></span>
-            <span class="animateBg"></span>
-        </label> -->
+            <!-- <span class="animateBg"></span> -->
+        </label>
 
         <div class="idioma" id="idioma">
             <ul>
                 <li><a href="#" style="font-size: 1.5em;">Language &dtrif;</a>
                   <ul class="dropdown">
-                    <li><a href="/es/index.html">Spanish</a></li>
-                    <li><a href="index.html">English</a></li>
+                    <li><a href="/es/index.html" class="idiomas">Spanish</a></li>
+                    <li><a href="index.html" class="idiomas">English</a></li>
                   </ul>
                 </li>
               </ul>
         </div>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
