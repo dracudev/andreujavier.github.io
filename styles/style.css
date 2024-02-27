@@ -715,36 +715,3 @@ span{
         font-size: 2em;
     }
 }
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --bg-color: #ffffff;
-        --second-bg-color: #bdafc5;
-        --text-color: #1f242d;
-    }
-
-    .about p {
-        color: #ffffff;
-    }
-
-    .services p {
-        color: #ffffff;
-    }
-
-    .projects h4, .projects p {
-        color: #ffffff;
-    }
-
-    .idiomas {
-        color: #ffffff;
-    }
-
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-color: #1f242d;
-        --second-bg-color: #323946;
-        --text-color: #fff;
-    }
-}
