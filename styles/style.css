@@ -715,3 +715,8 @@ span{
         font-size: 2em;
     }
 }
+
+::selection {
+    background: var(--main-color);
+    color: white;
+  }
