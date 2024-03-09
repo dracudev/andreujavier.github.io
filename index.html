@@ -13,7 +13,7 @@
 
     <title>Portfolio | Javier Andreu</title>
     
-    <!-- Favicon optimicized -->
+    <!-- Favicon optimized -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -194,18 +194,18 @@
     <section class="contact" id="contact">
         <h2 class="heading"><span>Contact</span> me!</h2>
 
-        <form action="send_email.php" method="post">
+        <form action="https://formsubmit.co/cef82cd0c4f0e28452cfd04b9a7241b6" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
 
             <div class="input-box">
-                <input type="tel" placeholder="Telephone" pattern="(\+\d{1,3})?\d{9}">
-                <input type="text" placeholder="Subject" required>
+                <input type="tel" name="telephone" placeholder="Telephone" pattern="(\+\d{1,3})?\d{9}">
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
 
-            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea cols="30" rows="10" name="message" placeholder="Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
