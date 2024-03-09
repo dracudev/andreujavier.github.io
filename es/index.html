@@ -178,15 +178,15 @@
     <section class="contact" id="contact">
         <h2 class="heading"><span>Contácta</span>me</h2>
 
-        <form action="#">
+        <form action="send_email.php" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
             </div>
 
             <div class="input-box">
                 <input type="tel" placeholder="Teléfono">
-                <input type="text" placeholder="Asunto">
+                <input type="text" placeholder="Asunto" required>
             </div>
 
             <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>

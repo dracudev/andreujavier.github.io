@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Javier Andreu">
     <meta name="keywords" content="Javier Andreu, Portfolio, Web Developer, Frontend Developer, Digital Marketing, Web Design, Videogame Development">
-    
+
     <title>Portfolio | Javier Andreu</title>
     <link rel="icon" href="images/darkgar.png" type="image/png">
 
@@ -186,15 +186,15 @@
     <section class="contact" id="contact">
         <h2 class="heading"><span>Contact</span> me!</h2>
 
-        <form action="#">
+        <form action="send_email.php" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
             </div>
 
             <div class="input-box">
                 <input type="tel" placeholder="Telephone">
-                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Subject" required>
             </div>
 
             <textarea cols="30" rows="10" placeholder="Message"></textarea>
@@ -221,5 +221,6 @@
 
     <!-- Custom js -->
     <script src="scripts/main.js"></script>
+
 </body>
 </html>
