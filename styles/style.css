@@ -56,6 +56,11 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+::selection {
+    background: var(--main-color);
+    color: white;
+  }
+
 /* HEADER */
 
 .header {
@@ -610,7 +615,7 @@ span{
     }
 }
 
-@media (max-width: 854px) {
+@media (max-width: 855px) {
     #menu-icon {
         display: block;
     }
@@ -716,7 +721,3 @@ span{
     }
 }
 
-::selection {
-    background: var(--main-color);
-    color: white;
-  }
