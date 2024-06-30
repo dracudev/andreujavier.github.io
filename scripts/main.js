@@ -53,7 +53,7 @@ ScrollReveal().reveal('.home-content p, .about-content, #about-education', { ori
 
 // typed js
 const typed = new Typed(".multiple-text", {
-    strings: ["Digital Marketer", "42 Student"],
+    strings: ["Digital Marketer", "Software Developer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
