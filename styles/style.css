@@ -700,10 +700,6 @@ span{
 }
 
 @media (max-width: 372px) {
-    .home-img img {
-        width: 70vw;
-    }
-
     .footer {
         flex-direction: column-reverse;
     }
