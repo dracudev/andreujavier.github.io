@@ -690,7 +690,7 @@ span{
     }
 
     .home-img img {
-        width: 60vw;
+        width: 80vw;
         margin-top: 2rem;
     }
 
@@ -701,7 +701,7 @@ span{
 
 @media (max-width: 372px) {
     .home-img img {
-        width: 90vw;
+        width: 70vw;
     }
 
     .footer {
