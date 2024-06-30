@@ -267,7 +267,6 @@ input:checked~.animateBg {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .home-img img{
@@ -654,7 +653,7 @@ span{
 
     .home-img img {
         width: 70vw;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
 
     .about {
@@ -687,7 +686,7 @@ span{
     }
 
     .home-img img {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 
     .contact form .input-box input {
@@ -697,7 +696,7 @@ span{
 
 @media (max-width: 372px) {
     .home-img img {
-        width: 80vw;
+        width: 65vw;
     }
 
     .footer {
@@ -713,4 +712,3 @@ span{
         font-size: 2em;
     }
 }
-
