@@ -270,7 +270,7 @@ input:checked~.animateBg {
 }
 
 .home-img img{
-    width: 25vw;
+    width: 30vw;
     animation: floatImage 4s ease-in-out infinite;
     border-radius: 50%;
 }
@@ -652,7 +652,7 @@ span{
     }
 
     .home-img img {
-        width: 70vw;
+        width: 55vw;
         margin-top: 3rem;
     }
 
@@ -678,6 +678,10 @@ span{
     .projects-container{
         grid-template-columns: 1fr;
     }
+
+    .home-img img {
+        width: 70vw;
+    }
 }
 
 @media (max-width: 450px) {
@@ -686,6 +690,7 @@ span{
     }
 
     .home-img img {
+        width: 80vw;
         margin-top: 2rem;
     }
 
@@ -696,7 +701,7 @@ span{
 
 @media (max-width: 372px) {
     .home-img img {
-        width: 65vw;
+        width: 90vw;
     }
 
     .footer {
