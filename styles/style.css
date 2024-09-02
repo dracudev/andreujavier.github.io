@@ -411,6 +411,10 @@ span{
     margin-bottom: 4rem;
 }
 
+.projects p {
+    font-size: 1.3rem;
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -424,6 +428,8 @@ span{
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    flex-direction: column; /* Add this line */
+    justify-content: space-between; /* Add this line */
 }
 
 .projects-box img {

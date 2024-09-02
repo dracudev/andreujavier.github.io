@@ -1,2 +1,2 @@
-Código de mi proyecto de portfolio personal para prácticar HTML, CSS y JS.
-Puedes encontrar la web en www.andreujavier.dev
+Code from my personal portfolio project to practice HTML, CSS and JS.
+You can find the website at www.andreujavier.dev
