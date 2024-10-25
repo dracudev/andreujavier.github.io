@@ -1,0 +1,6 @@
+// TO DO
+
+Imgs -> webp/svg + alt
+Lighthouse
+JS lightmode
+Cambiar colores lightmode
