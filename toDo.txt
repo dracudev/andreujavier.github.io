@@ -4,3 +4,5 @@ Imgs -> webp/svg + alt
 Lighthouse
 JS lightmode
 Cambiar colores lightmode
+
+Añadir tecnologías
